@@ -1,5 +1,5 @@
 ## Use a closure to build caching capability and avoid calculating
-## values already computed.
+## values already computed: in this case, the inverse of a matrix.
 
 
 ## The caching mechanism
