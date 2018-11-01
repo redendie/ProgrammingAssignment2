@@ -38,12 +38,12 @@ cacheSolve <- function(x, ...) {
         
         # Otherwise, calculate the inverse here,
         # and use the setter function from `x` to store
-        # the calculated inverse in `x`.
+        # the calculated inverse in the cache
         M <- x$get()
         inverse <- solve(M, ...)
         x$setinverse(inverse)
         
-        # Return the inverse of the matrix stored in `x`
+        # Return the inverse just calculated.
         inverse
 }
 
